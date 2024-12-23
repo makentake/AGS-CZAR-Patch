@@ -3,7 +3,7 @@
     <name>Authentic Gun Styles and CE+CZAR Patch</name>
     <author>takenmake</author>
     <packageId>takenmake.agsczarpatch</packageId>
-    <description>patches Authentic Gun Styles to properly apply styles to any guns removed from CE Guns by CE+CZAR Arsenel</description>
+    <description>patches Authentic Gun Styles to properly apply styles to any guns removed from CE Guns by CE+CZAR Arsenal</description>
     <supportedVersions>
         <li>1.5</li>
     </supportedVersions>
