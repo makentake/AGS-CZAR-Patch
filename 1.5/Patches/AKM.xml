@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!--REMOVE BAD PATCH-->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/StyleCategoryDef[defName="Techist" or
+    defName="Spikecore" or
+    defName="Morbid" or
+    defName="Totemic" or
+    defName="Rustic"]/thingDefStyles/li[thingDef="CE_Gun_AKM"]</xpath>
+  </Operation>
+  <!--ADD GOOD PATCH-->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/StyleCategoryDef[defName="Techist"]/thingDefStyles</xpath>
+        <value>
+          <li>
+            <thingDef>CE_Gun_KripAKM</thingDef>
+            <styleDef>CE_Gun_AKM_Techist</styleDef>
+          </li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/StyleCategoryDef[defName="Spikecore"]/thingDefStyles</xpath>
+        <value>
+          <li>
+            <thingDef>CE_Gun_KripAKM</thingDef>
+            <styleDef>CE_Gun_AKM_Spikecore</styleDef>
+          </li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/StyleCategoryDef[defName="Morbid"]/thingDefStyles</xpath>
+        <value>
+          <li>
+            <thingDef>CE_Gun_KripAKM</thingDef>
+            <styleDef>CE_Gun_AKM_Morbid</styleDef>
+          </li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/StyleCategoryDef[defName="Totemic"]/thingDefStyles</xpath>
+        <value>
+          <li>
+            <thingDef>CE_Gun_KripAKM</thingDef>
+            <styleDef>CE_Gun_AKM_Totemic</styleDef>
+          </li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/StyleCategoryDef[defName="Rustic"]/thingDefStyles</xpath>
+        <value>
+          <li>
+            <thingDef>CE_Gun_KripAKM</thingDef>
+            <styleDef>CE_Gun_AKM_Rustic</styleDef>
+          </li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
